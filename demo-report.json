@@ -1,0 +1,50 @@
+{
+  "source": "synthetic demo",
+  "address": "3M2b3tLji7rvscqrLAHMukYxDK2nB96Q9hwfV6QkdzBN",
+  "commitment": "finalized",
+  "summary": {
+    "transactions": 3,
+    "successful": 2,
+    "failed": 1,
+    "unknown_status": 0,
+    "missing_balance_details": 1,
+    "known_balance_change_lamports": 249995000
+  },
+  "transactions": [
+    {
+      "signature": "demo-success",
+      "slot": 103,
+      "time_utc": "2026-02-02T02:42:00+00:00",
+      "status": "success",
+      "transaction_error": null,
+      "balance_change_lamports": 250000000,
+      "fee_paid_lamports": 0,
+      "detail_error": null
+    },
+    {
+      "signature": "demo-failed",
+      "slot": 102,
+      "time_utc": "2026-02-02T02:41:00+00:00",
+      "status": "failed",
+      "transaction_error": {
+        "InstructionError": [
+          0,
+          "InsufficientFunds"
+        ]
+      },
+      "balance_change_lamports": -5000,
+      "fee_paid_lamports": 5000,
+      "detail_error": null
+    },
+    {
+      "signature": "demo-unavailable",
+      "slot": 101,
+      "time_utc": null,
+      "status": "success",
+      "transaction_error": null,
+      "balance_change_lamports": null,
+      "fee_paid_lamports": null,
+      "detail_error": null
+    }
+  ]
+}

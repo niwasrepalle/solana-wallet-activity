@@ -1,0 +1,19 @@
+{
+  "address": "3M2b3tLji7rvscqrLAHMukYxDK2nB96Q9hwfV6QkdzBN",
+  "signatures": [
+    {"signature":"demo-success", "slot":103, "blockTime":1770000120, "err":null},
+    {"signature":"demo-failed", "slot":102, "blockTime":1770000060, "err":{"InstructionError":[0,"InsufficientFunds"]}},
+    {"signature":"demo-unavailable", "slot":101, "blockTime":null, "err":null}
+  ],
+  "transactions": {
+    "demo-success": {
+      "transaction":{"message":{"accountKeys":[{"pubkey":"11111111111111111111111111111111"},{"pubkey":"3M2b3tLji7rvscqrLAHMukYxDK2nB96Q9hwfV6QkdzBN"}]}},
+      "meta":{"preBalances":[2000000000,1000000000],"postBalances":[1749995000,1250000000],"fee":5000}
+    },
+    "demo-failed": {
+      "transaction":{"message":{"accountKeys":[{"pubkey":"3M2b3tLji7rvscqrLAHMukYxDK2nB96Q9hwfV6QkdzBN"}]}},
+      "meta":{"preBalances":[1000000000],"postBalances":[999995000],"fee":5000}
+    },
+    "demo-unavailable":null
+  }
+}
