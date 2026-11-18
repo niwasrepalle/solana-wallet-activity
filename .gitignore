@@ -1,0 +1,28 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials*.json
+*keypair*.json
+id.json
+wallet.json
+wallets/
+
+# Private run output
+reports/
+live-report*.json
+*.log
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
